@@ -1,4 +1,4 @@
-import { Given, Then } from "cypress-cucumber-preprocessor/steps";
+import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 
 const url = 'http://admin-staging.aonewallet.com/'
 Given('browser is at Onewallet admin staging site', () => {
@@ -50,5 +50,6 @@ Then('admin signs in successfully and redirects to default page', () => {
   });
   cy.get('[data-target="profile-username"]').contains('admin117');
   cy.get('[role="menuitem"]').contains('Dashboard');
-  
+
 })
+

@@ -1,5 +1,6 @@
 {
     "testFiles": ["**/*.{feature,features}"],
     
-    "ignoreTestFiles": "*.ts"
+    "ignoreTestFiles": "*.ts",
+    "defaultCommandTimeout": 30000
 }
