@@ -91,3 +91,15 @@ Then('admin can view the profile setting page', () => {
   cy.get('.sidebar-left-nav').should('exist');
 })
 
+//Scenario: Admin views member management config
+When('admin clicks members-member management config',() => {
+  cy.get('[title="Members"]').click();
+  cy.get('[id="members$Menu"]').should('exist');
+  cy.get('.ant-menu-item').contains('Member Management Config').click();
+})
+
+Then('admin can view the member management config page', () => {
+  cy.get('#members-table').should('exist');
+  cy.get('.sidebar-left-nav').should('exist');
+})
+

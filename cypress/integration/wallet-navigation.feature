@@ -29,6 +29,12 @@ Feature: wallet page navigation
 
     Scenario: Admin views profile setting
         When admin clicks members-profile setting
-        Then admin can view the profile setting page 
+        Then admin can view the profile setting page
+
+    Scenario: Admin views member management config
+        When admin clicks members-member management config
+        Then admin can view the member management config page
+
+    
 
     
