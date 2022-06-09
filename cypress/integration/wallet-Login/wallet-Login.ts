@@ -34,7 +34,6 @@ When('admin signs in with wrong username or password', () => {
 
 Then('an error message pops up "Invalid Username or Password"', () => {
   cy.get('.ant-message-notice').contains('Invalid username or password');
-  
 })
 
 //Scenario: Log in successful
@@ -50,6 +49,5 @@ Then('admin signs in successfully and redirects to default page', () => {
   });
   cy.get('[data-target="profile-username"]').contains('admin117');
   cy.get('[role="menuitem"]').contains('Dashboard');
-
 })
 
