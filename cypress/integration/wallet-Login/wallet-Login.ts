@@ -11,6 +11,7 @@ Given('browser is at Onewallet admin staging site', () => {
   cy.get('[name="password"]').should('exist');
   cy.get('.ant-btn').contains('Sign in as Operator').should('exist');
   cy.get('[data-target="signin-button"]').should('exist');
+  cy.wait(500);
 })
 
 //Scenario: Sign In validation for invalid signin
